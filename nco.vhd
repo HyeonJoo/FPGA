@@ -6,9 +6,9 @@ use ieee.std_logic_unsigned.all;
 
 entity nco is
 port(	CLK_IN		: in std_logic;
-		RST			: in std_logic;
-		N			: in std_logic_vector(15 downto 0);
-		CLK_OUT		: out std_logic);
+	RST		: in std_logic;
+	N		: in std_logic_vector(15 downto 0);
+	CLK_OUT		: out std_logic);
 end nco;
 
 architecture BEHAVE of nco is
@@ -24,5 +24,5 @@ begin
 	end process;
 
 	CLK_OUT <= nco_register(15);
-	
+
 end BEHAVE;
