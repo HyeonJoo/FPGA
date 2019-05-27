@@ -2,6 +2,8 @@ library IEEE;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
+-- Nemerically controlled oscillator
+
 entity nco is
 port(	CLK_IN		: in std_logic;
 		RST			: in std_logic;
